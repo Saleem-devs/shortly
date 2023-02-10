@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#container {
+  width: 90%;
+  margin: auto;
+}
+#small_container {
+  width: 90%;
+  margin: auto;
+}
+.short_link_form {
+  background: url(./images/short-link-bg.png) !important;
+  background-position: center;
+  background-size: cover;
+}
+input {
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  #small_container {
+    width: 60%;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+}

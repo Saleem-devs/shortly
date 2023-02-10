@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <!-- Navbar  -->
+        <nav id="container">
+            <div class="navbar flex items-center justify-between py-4">
+                <div class="flex items-center gap-x-8 navbar__left">
+                    <a href="index.html">
+                        <img class="w-100" src="./images/Shortly.svg" alt="logo">
+                    </a>
+                    <div class="hidden md:block link text-textColor ">
+                        <a class="mr-6 hover:text-black" href="#">Features</a>
+                        <a class="mr-6 hover:text-black" href="#">Pricing</a>
+                        <a class="mr-6 hover:text-black" href="#">Resources</a>
+                    </div>
+                </div>
+                <div class="hidden md:block navbar__right">
+                    <a href="#" class="text-textColor mr-4 hover:text-black">Login</a>
+                    <button class="bg-btnBg py-2 px-4 rounded-3xl text-white hover:bg-btHover" type="button">Sign
+                        Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero section  -->
+        <div class="hero flex items-center flex-col-reverse gap-8 py-10 md:flex-row ">
+            <div
+                class="hero_left flex flex-col items-center gap-y-4 px-5 text-center md:text-left md:items-start md:px-10 md:w-1/2 ">
+                <h1 class="font-bold text-headingColor text-4xl">More than just shorter links</h1>
+                <p class="text-textColor">Build your brand's recognition and get detailed insights on how your links are
+                    performing.</p>
+                <button class="bg-btnBg py-2 px-7 rounded-3xl text-white hover:bg-btHover" type="button">Get
+                    Started</button>
+            </div>
+            <div class="hero_right pl-5 md:px-0 md:w-1/2">
+                <img class="w-full" src="./images/working_with_computer.png" alt="hero image">
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Short Link Area  -->
+
+    <section class="py-10 bg-grayBg">
+        <div id="small_container" class="short_link_form">
+            <form class=" short_link_form flex flex-col p-5 gap-3 md:flex-row md:p-3">
+                <input class="py-2 px-4 rounded-md md:basis-4/5" placeholder="Shorten a link here...">
+                <button class="bg-btnBg py-2 px-4 rounded-md text-white hover:bg-btHover" type="button">Shorten
+                    It!</button>
+            </form>
+        </div>
+        <div id="small_container" class="link_result">
+
+        </div>
+
+    </section>
+
+    <!-- Advanced Statistics  -->
+
+    <section class="text-center py-4 bg-grayBg ">
+        <div class="mx-auto w-4/5 md:w-3/5">
+            <h2 class="text-3xl mb-3 text-headingColor font-bold">Advanced Statistics</h2>
+            <p class="text-textColor">Track how your links are performing across the web with our advanced statistics
+                dashboard.</p>
+        </div>
+
+    </section>
+
+    <!-- Article  -->
+
+    <article class="bg-grayBg py-14">
+        <div id="container">
+            <div class="flex flex-col text-center md:text-left md:flex-row gap-5 md:h-80">
+                <div class="p-4 mb-6 bg-white relative md:self-start">
+                    <div
+                        class="flex items-center justify-center absolute -top-7 left-1/2 -translate-x-1/2 bg-purpleBg rounded-full w-16 h-16  md:left-4 md:translate-x-0">
+                        <img src="./images/brand.png" alt="brand">
+                    </div>
+                    <h3 class="font-bold text-headingColor mt-12 mb-3">Brand Recognition</h3>
+                    <p class="text-textColor">Boost your brand recognition with each click. Generic links don't mean a
+                        thing. Branded links helpinstil confidence in your content.</p>
+                </div>
+                <div class="p-4 mb-6 bg-white relative md:self-center">
+                    <div
+                        class="flex items-center justify-center absolute -top-7 left-1/2 -translate-x-1/2 bg-purpleBg rounded-full w-16 h-16  md:left-4 md:translate-x-0">
+                        <img src="./images/brand.png" alt="brand">
+                    </div>
+                    <h3 class="font-bold text-headingColor mt-12 mb-3">Brand Recognition</h3>
+                    <p class="text-textColor">Boost your brand recognition with each click. Generic links don't mean a
+                        thing. Branded links helpinstil confidence in your content.</p>
+                </div>
+                <div class="p-4 mb-6 bg-white relative md:self-end">
+                    <div
+                        class="flex items-center justify-center absolute -top-7 left-1/2 -translate-x-1/2 bg-purpleBg rounded-full w-16 h-16 md:left-4 md:translate-x-0">
+                        <img src="./images/brand.png" alt="brand">
+                    </div>
+                    <h3 class="font-bold text-headingColor mt-12 mb-3">Brand Recognition</h3>
+                    <p class="text-textColor">Boost your brand recognition with each click. Generic links don't mean a
+                        thing. Branded links helpinstil confidence in your content.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Boost your links  -->
+
+    <section class="bg-purpleBg text-center py-10">
+        <div id="small_container" class="flex flex-col gap-4 items-center">
+            <h3 class="text-white font-bold text-2xl">Boost your links today</h3>
+            <button class="bg-btnBg py-2 px-7 rounded-3xl text-white hover:bg-btHover" type="button">Get
+                Started</button>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <footer class="bg-darkBg text-white">
+        <div id="container"
+            class="py-14 flex flex-col justify-between items-center gap-5 text-center md:flex-row md:text-left md:items-start">
+            <div>
+                <img src="./images/White-Shortly.png" alt="logo">
+            </div>
+            <div class="mb-5">
+                <p class="mb-4 font-bold">Features</p>
+                <a class="block mb-2 hover:text-btnBg" href="#">Link Shortening</a>
+                <a class="block mb-2 hover:text-btnBg" href="#">Branded Links</a>
+                <a class="block hover:text-btnBg" href="#">Analytics</a>
+            </div>
+            <div class="mb-5">
+                <p class="mb-4 font-bold">Resources</p>
+                <a class="block mb-2 hover:text-btnBg" href="#">Blog </a>
+                <a class="block mb-2 hover:text-btnBg" href="#">Developers </a>
+                <a class="block hover:text-btnBg" href="#">Support</a>
+            </div>
+            <div mb-5>
+                <p class="mb-4 font-bold">Company</p>
+                <a class="block mb-2 hover:text-btnBg" href="#"> About</a>
+                <a class="block mb-2 hover:text-btnBg" href="#">Our Team</a>
+                <a class="block mb-2 hover:text-btnBg" href="#">Careers </a>
+                <a class="block hover:text-btnBg" href="#">Contact</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="cursor-pointer" src="./images/facebook.png" alt="facebook">
+                <img class="cursor-pointer" src="./images/twitter.png" alt="twitter">
+                <img class="cursor-pointer" src="./images/pinterest.png" alt="pinterest">
+                <img class="cursor-pointer" src="./images/instagram.png" alt="instagram">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
