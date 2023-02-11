@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="relative overflow-x-hidden">
     <header>
 
         <!-- Navbar  -->
@@ -32,6 +32,12 @@
                     <button class="bg-btnBg py-2 px-4 rounded-3xl text-white hover:bg-btHover" type="button">Sign
                         Up</button>
                 </div>
+                <!-- Hamburger Icon  -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
             </div>
         </nav>
 
@@ -55,18 +61,28 @@
     <!-- Short Link Area  -->
 
     <section class="py-10 bg-grayBg">
-        <div id="small_container" class="short_link_form">
-            <form class=" short_link_form flex flex-col p-5 gap-3 md:flex-row md:p-3">
-                <input class="py-2 px-4 rounded-md md:basis-4/5" placeholder="Shorten a link here...">
-                <button class="bg-btnBg py-2 px-4 rounded-md text-white hover:bg-btHover" type="button">Shorten
+        <div id="small_container" style="background-image: url('./images/short-link-bg.png')"
+            class="short_link_form bg-no-repeat bg-cover rounded-md">
+            <form
+                class=" short_link_form flex flex-col p-5 gap-3 md:flex-row md:p-8 md:justify-between md:items-center">
+                <div class="flex flex-col gap-2 md:basis-4/5">
+                    <input id="input" class=" py-2 px-4 rounded-md " placeholder="Shorten a link here...">
+                    <p class="error hidden text-textRed">Please add a link</p>
+                </div>
+
+                <button id="btn" class="bg-btnBg py-2 px-2 rounded-md text-white hover:bg-btHover" type="button">Shorten
                     It!</button>
             </form>
         </div>
-        <div id="small_container" class="link_result">
+
+        <!-- Short Link Result  -->
+
+        <div id="small_container" class="link_result mt-3">
 
         </div>
 
     </section>
+
 
     <!-- Advanced Statistics  -->
 
@@ -117,7 +133,8 @@
 
     <!-- Boost your links  -->
 
-    <section class="bg-purpleBg text-center py-10">
+    <section style="background-image: url('./images/boost-link-bg.png')"
+        class=" text-center bg-no-repeat bg-cover py-10">
         <div id="small_container" class="flex flex-col gap-4 items-center">
             <h3 class="text-white font-bold text-2xl">Boost your links today</h3>
             <button class="bg-btnBg py-2 px-7 rounded-3xl text-white hover:bg-btHover" type="button">Get
@@ -159,7 +176,32 @@
                 <img class="cursor-pointer" src="./images/instagram.png" alt="instagram">
             </div>
         </div>
+        <div class="text-center pb-4">
+            <p>Challenge by <a class="font-bold hover:text-btnBg"
+                    href="https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G"
+                    target="_blank">Frontend Mentor</a> Coded by <a class="font-bold hover:text-btnBg"
+                    href="https://github.com/Saleem-devs" target="_blank">Saleem</a></p>
+        </div>
     </footer>
+
+    <!-- Menu Nav  -->
+
+    <section
+        class="menu-nav container bg-headingColor text-center text-white flex flex-col items-center p-5 rounded-md absolute top-14 w-full md:hidden">
+
+        <nav class="flex flex-col gap-5 border-solid border-b border-textColor w-full">
+            <a class="hover:text-btnBg" href="#">Features</a>
+            <a class="hover:text-btnBg" href="#">Pricing</a>
+            <a class="hover:text-btnBg mb-3" href="#">Resources</a>
+        </nav>
+        <div class="flex flex-col items-center w-full gap-5 mt-4">
+            <a href="#" class="text-white hover:text-btnBg">Login</a>
+            <button class="bg-btnBg py-2 px-4 rounded-3xl w-full text-white hover:bg-btHover" type="button">Sign
+                Up</button>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>

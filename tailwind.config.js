@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         headingColor: "#34313D",
         textColor: "#9E9AA8",
+        textRed: "#f46363",
         btnBg: "#2BD0D0",
         grayBg: "#EFF1F7",
         purpleBg: "#3A3054",
