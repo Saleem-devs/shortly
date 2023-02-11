@@ -9,7 +9,7 @@ const body = document.querySelector("body");
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("open");
   menu.classList.toggle("show-menu");
-  body.classList.toggle("overflow-y-hidden");
+  body.classList.toggle("overflow");
 });
 
 const baseURL = "https://api.shrtco.de/v2";

@@ -868,10 +868,14 @@ video {
   margin: auto;
 }
 
-/* body {
+body {
   max-width: 1440px;
   margin: auto;
-} */
+}
+
+.overflow {
+  overflow-y: hidden;
+}
 
 .input_box {
   border: 1px solid #34313d;
@@ -948,11 +952,12 @@ input {
 /* Menu nav  */
 
 .menu-nav {
-  right: -200%;
+  right: 200%;
 }
 
 .show-menu {
   left: 50%;
+  right: 0;
   transform: translateX(-50%);
   transition: all 0.5s ease;
 }
