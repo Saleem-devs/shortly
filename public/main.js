@@ -16,13 +16,25 @@ const baseURL = "https://api.shrtco.de/v2";
 
 function fetchData() {
   if (input.value.trim() != 0) {
+    btn.textContent = "Loading...";
+    btn.setAttribute("disabled", "true");
     let inputValue = input.value;
     input.classList.remove("input_box");
     errorMsg.classList.remove("show_error");
 
     fetch(`${baseURL}/shorten?url=${inputValue}`)
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.ok) {
+          console.log("Got Data");
+          console.log(response);
+          return response.json();
+        } else {
+          console.log("Failed to Get");
+          console.log(response);
+        }
+      })
       .then((data) => {
+        console.log(data);
         linkResult.innerHTML = `
           <div class="flex flex-col gap-3 p-4 mt-3 bg-white rounded-md md:flex-row md:items-center md:justify-between">
             <a class="original_link text-headingColor" href="${data.result.original_link}" target="_blank">${data.result.original_link}</a>
@@ -47,6 +59,15 @@ function fetchData() {
             copyBtn.style.backgroundColor = "#3A3054";
           });
         }
+
+        btn.textContent = "Shorten It!";
+        btn.removeAttribute("disabled");
+      })
+      .catch((error) => {
+        errorMsg.textContent = "Please enter a valid link";
+        errorMsg.classList.add("show_error");
+        btn.textContent = "Shorten It!";
+        btn.removeAttribute("disabled");
       });
   } else {
     input.classList.add("input_box");
@@ -55,3 +76,4 @@ function fetchData() {
 }
 
 btn.addEventListener("click", fetchData);
+("");
